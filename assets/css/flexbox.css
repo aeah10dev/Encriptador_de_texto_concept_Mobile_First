@@ -1,0 +1,47 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+.textoArea{
+    display: flex;
+    flex-direction: column;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mensajeArea{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.btn-copi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.mensaje-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+@media screen and (min-width:768px){
+    main{
+        padding: 1rem;
+    }
+    .botones{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+
+@media screen and (min-width:1200px){
+    main{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widht initial-scale=1.0">
+        <title>Encriptador | Alura</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/flexbox.css">
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="headerPrincipal">
+            <div><img src="/assets/img/Logo.svg" alt="Logo Alura" class="logo"></div>
+        </header>
+        <main>
+            <section class="textoArea">
+                <textarea class="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí" data-text></textarea>
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar"onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section class="mensajeArea">
+                <div class="mensaje-area"><textarea cols="20" rows="10" class="mensaje" data-mensaje id="texto-a-copiar"></textarea></div>
+                <div class="btn-copi"><button class="btn-copiar" onclick="copiarTexto()">Copiar</button></div>
+            </section>
+        </main>
+        <script src="/script.js"></script>
+    </body>
+</html>
